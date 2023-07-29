@@ -2,22 +2,22 @@
 # Написати рекурсивну функцію знаходження ступеня числа.
 
 
-def my_pow(user_number: int, user_pow: int) -> int:
-    if user_pow < 0:
-        raise Exception('Enter only positive pow please!')
-    if user_pow == 0:
-        return 1
-    if user_pow == 1:
-        return user_number
-    return user_number * my_pow(user_number, user_pow - 1)
-
-
-try:
-    user_number = int(input('Enter a number: '))
-    user_pow = int(input('Enter a pow: '))
-    print(my_pow(user_number, user_pow))
-except Exception as error:
-    print('Oops... some problem here, please try again')
+# def my_pow(user_number: int, user_pow: int) -> int: # Створюємо функцію яка приймає число користувача та його сутпінь
+#     if user_pow < 0: # Робимо перевірки на некоректний ввод користувача
+#         raise Exception('Enter only positive pow please!')
+#     if user_pow == 0:
+#         return 1
+#     if user_pow == 1:
+#         return user_number
+#     return user_number * my_pow(user_number, user_pow - 1) # Створюємо рекурсію та виводимо результат з функції
+#
+#
+# try: # Обробляємо винятки та запитуємо в користувача число та ступінь для возведення
+#     user_number = int(input('Enter a number: '))
+#     user_pow = int(input('Enter a pow: '))
+#     print(my_pow(user_number, user_pow))
+# except Exception as error:
+#     print('Oops... some problem here, please try again')
 
 
 # Завдання 2.
