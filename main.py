@@ -60,3 +60,5 @@
 # a = int(input('Enter first number: ')) # Просимо користувача ввести 1 цифру
 # b = int(input('Enter second number: ')) # Просимо користувача ввести 2 цифру
 # print(recursion_sum_in_range(a, b)) # Виводимо результат роботи функції через
+
+# All tasks done
